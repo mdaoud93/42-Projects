@@ -1,0 +1,5 @@
+# Trouvez l’IP qui vous a été assignée par le serveur dhcp
+
+ifconfig en0 | grep "inet" | sed 1d | awk '{print $2}'
+
+# 10.13.11.7

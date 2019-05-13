@@ -1,0 +1,8 @@
+# Trouver chez quel hébergeur est le site de Slash16
+
+
+whois slash16.org | grep "Name Server" | cut -d" " -f3
+
+
+# dig slash16.org | grep "AUTHORITY SECTION" -A4 | sed 1d
+# Amazon Web Services

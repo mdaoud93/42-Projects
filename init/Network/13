@@ -1,0 +1,3 @@
+# Grâce a la question précédente et au reverse DNS retrouvez le nom de votre host
+
+VAR=$(ifconfig en0 | grep "inet" | sed 1d | awk '{print $2}') ; dig +short -x $VAR

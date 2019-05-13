@@ -1,0 +1,3 @@
+# Trouver l’IP Publique de 42.fr
+
+dig +short 42.fr

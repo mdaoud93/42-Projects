@@ -1,0 +1,3 @@
+# Déterminez la taille exacte de chaque dossier de /var d’une manière humainement compréhensible suivi du chemin de celui-ci.
+
+sudo du -sh /var/*
